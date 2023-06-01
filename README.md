@@ -1,7 +1,7 @@
 # banco-de-dados
 
 - Objetivo:
-  - Inserir as atividades em equipe da disciplina de Banco de Dados
+  - Inserir os arquivos entregues da disciplina de Banco de Dados
 
 - Equipe:
   - Marcos Anthony
