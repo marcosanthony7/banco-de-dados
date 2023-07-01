@@ -1,7 +1,7 @@
 # banco-de-dados
 
 - Objetivo:
-  - Inserir os trabalhos desenvolvidos na disciplina de Banco de Dados em 2023
+  - Inserir os trabalhos desenvolvidos na disciplina de Banco de Dados
 
 - Equipe:
   - Marcos Anthony
