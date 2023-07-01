@@ -8,4 +8,3 @@
   - Thiago Rogério
   - Anthony Victor
   - Cláudio Lucas
-- Alberto
