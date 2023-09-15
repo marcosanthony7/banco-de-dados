@@ -4,9 +4,9 @@ USE Lobby;
 CREATE TABLE Usuario(
 	id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(50) NOT NULL,
-    apelido VARCHAR(50),
     email VARCHAR(50) UNIQUE,
     senha VARCHAR(50) NOT NULL,
+	apelido VARCHAR(50),
     foto VARCHAR(100),
     banner VARCHAR(100),
     descricao VARCHAR(200),
@@ -32,6 +32,7 @@ CREATE TABLE Comunidade(
 	codigo INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(50) NOT NULL,
     foto VARCHAR(100),
+    banner VARCHAR(100),
 	descricao VARCHAR(200)
 );
 
@@ -46,6 +47,7 @@ CREATE TABLE Grupo(
 	codigo INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(50) NOT NULL,
     foto VARCHAR(100),
+    banner VARCHAR(100),
 	descricao VARCHAR(200),
     id_adminGrupo INT NOT NULL,
     id_comunidade INT NOT NULL,
