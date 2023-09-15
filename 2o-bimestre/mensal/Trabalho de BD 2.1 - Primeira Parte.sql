@@ -11,9 +11,7 @@ CREATE TABLE Usuario(
     banner VARCHAR(100),
     descricao VARCHAR(200),
     titulo VARCHAR(50),
-	avaliacao INT,
-    seguidores INT,
-    seguindo INT
+	avaliacao INT
 );
 
 CREATE TABLE Participante(
@@ -55,6 +53,13 @@ CREATE TABLE Grupo(
     FOREIGN KEY (id_comunidade) REFERENCES Comunidade(codigo)
 );
 
+CREATE TABLE ParticipanteGrupo(
+	id_participante INT NOT NULL,
+    id_grupo INT NOT NULL,
+	FOREIGN KEY (id_participante) REFERENCES Participante(id),
+    FOREIGN KEY (id_grupo) REFERENCES Grupo(codigo)
+);
+
 CREATE TABLE Amigos(
 	FK_id_usuario1 INT NOT NULL,
     FK_id_usuario2 INT NOT NULL,
@@ -74,12 +79,21 @@ CREATE TABLE Mensagens(
 
 CREATE TABLE Postagens(
 	id INT AUTO_INCREMENT PRIMARY KEY,
-    id_usuario INT NOT NULL,
+    id_usuario INT,
     foto VARCHAR(100),
     link_video VARCHAR(100),
     descricao VARCHAR(200),
     likes INT,
     FOREIGN KEY (id_usuario) REFERENCES Usuario(id)
+);
+
+CREATE TABLE Comentarios(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario INT,
+    id_postagem INT,
+    comentario VARCHAR(200),
+    FOREIGN KEY (id_usuario) REFERENCES Usuario(id),
+    FOREIGN KEY (id_postagem) REFERENCES Postagens(id)
 );
 
 INSERT INTO Usuario (id, nome, email, senha)
