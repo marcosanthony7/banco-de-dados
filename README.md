@@ -8,4 +8,4 @@
   - Thiago Rogério de Melo
   - Anthony Victor da Silva Machado
   - Cláudio Lucas Dantas da Silva Farias
-  - Claudio Alberto Henrique Marques
+  - Claudio Alberto Henrique Marque
