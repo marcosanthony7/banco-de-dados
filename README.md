@@ -1,7 +1,7 @@
 # banco-de-dados
 
 - Objetivo:
-  - Inserir os trabalhos desenvolvidos na disciplina de Banco de Dados
+  - Inserir os trabalhos desenvolvidos na disciplina de Banco de Dado
 
 - Equipe:
   - Marcos Anthony Rodrigues Cardoso
