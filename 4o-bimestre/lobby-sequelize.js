@@ -218,7 +218,7 @@ Notificacao.belongsTo(Usuario);
 // Sincronizando os modelos com o banco de dados
 sequelize.sync({ force: true }).then(async () => {
     // Criando um usuário AdministradorGrupo com Comunidade e Grupo
-    const usario1 = await Usuario.create({
+    const usuario1 = await Usuario.create({
         nome_usuario: 'marcos_anthony',
         email: 'marcosanthony@gmail.com',
         senha: 'marcos123456',
@@ -239,7 +239,7 @@ sequelize.sync({ force: true }).then(async () => {
     });
 
     // Consultando o usuário com seus relacionamentos
-    const usuarioComRelacionamentos = await Usuario.findByPk(usario1.id, {
+    const usuarioComRelacionamentos = await Usuario.findByPk(usuario1.id, {
         include: [AdministradorGrupo, Grupo],
     });
 
