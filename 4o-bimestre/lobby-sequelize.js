@@ -217,33 +217,6 @@ Notificacao.belongsTo(Usuario);
 
 // Sincronizando os modelos com o banco de dados
 sequelize.sync({ force: true }).then(async () => {
-    // Criando um usuário AdministradorGrupo com Comunidade e Grupo
-    const usuario1 = await Usuario.create({
-        nome_usuario: 'marcos_anthony',
-        email: 'marcosanthony@gmail.com',
-        senha: 'marcos123456',
-        nome_exibido: 'Marcos Anthony',
-        foto: 'fotomarcos.jpg',
-        banner: 'bannermarcos.jpg',
-        descricao: '17 anos, artista e produtor musical, mcz',
-        titulo: 'Pro Player',
-        avaliacao: 5,
-        Comunidade: [
-            { nome: 'Valorant BR', foto: 'fotocomunidade.jpg', banner: 'bannercomunidade.jpg', descricao: 'Comunidade BR de Valorant' },
-        ],
-        Grupo: [
-            { nome: 'Pro Players do Vava', foto: 'fotogrupo.jpg', banner: 'bannergrupo.jpg', descricao: 'Grupo BR de Pro Players do Vava' },
-        ],
-    }, {
-        include: [AdministradorGrupo, Grupo], // Incluindo os relacionamentos ao criar o usuário
-    });
-
-    // Consultando o usuário com seus relacionamentos
-    const usuarioComRelacionamentos = await Usuario.findByPk(usuario1.id, {
-        include: [AdministradorGrupo, Grupo],
-    });
-
-    console.log(JSON.stringify(usuarioComRelacionamentos, null, 2));
 
     // Fechando a conexão com o banco de dados
     await sequelize.close();
