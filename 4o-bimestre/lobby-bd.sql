@@ -120,26 +120,26 @@ CREATE TABLE notificacao(
 
 # Inserts antigos abaixo:
 
-INSERT INTO usuario (id, nome, email, senha)
-VALUES (1, 'Marcos', 'marcos@gmail.com', 'marcos123'),
-(2, 'Anthony', 'anthony@gmail.com', 'anthony123'),
-(3, 'Thiago', 'thiago@yahoo.com', 'thiago123'),
-(4, 'Alberto', 'alberto@outlook.com', 'alberto123'),
-(5, 'Lucas', 'lucas@hotmail.com', 'lucas123'),
-(6, 'Maria', 'maria@hotmail.com', 'maria123');
+-- INSERT INTO usuario (id, nome, email, senha)
+-- VALUES (1, 'Marcos', 'marcos@gmail.com', 'marcos123'),
+-- (2, 'Anthony', 'anthony@gmail.com', 'anthony123'),
+-- (3, 'Thiago', 'thiago@yahoo.com', 'thiago123'),
+-- (4, 'Alberto', 'alberto@outlook.com', 'alberto123'),
+-- (5, 'Lucas', 'lucas@hotmail.com', 'lucas123'),
+-- (6, 'Maria', 'maria@hotmail.com', 'maria123');
 
-INSERT INTO participante (id, id_usuario)
-VALUES (1, 4), (2, 5), (3, 6);
+-- INSERT INTO participante (id, id_usuario)
+-- VALUES (1, 4), (2, 5), (3, 6);
 
-INSERT INTO administradorGrupo (id, id_usuario)
-VALUES (1, 1), (2, 2), (3, 3);
+-- INSERT INTO administradorGrupo (id, id_usuario)
+-- VALUES (1, 1), (2, 2), (3, 3);
 
-INSERT INTO comunidade (codigo, nome)
-VALUES (1, 'Valorant'), (2, 'League of Legends'), (3, 'Minecraft');
+-- INSERT INTO comunidade (codigo, nome)
+-- VALUES (1, 'Valorant'), (2, 'League of Legends'), (3, 'Minecraft');
 
-INSERT INTO participanteComunidade (id_participante, id_comunidade)
-VALUES (1, 1), (2, 1), (3, 2);
+-- INSERT INTO participanteComunidade (id_participante, id_comunidade)
+-- VALUES (1, 1), (2, 1), (3, 2);
 
-INSERT INTO grupo (codigo, nome, id_adminGrupo, id_comunidade)
-VALUES (1, 'Valorant Time A', 1, 1),
-(2, 'Lolzeiros de AL', 2, 2), (3, 'Em busca da casa automatica', 3, 3);
+-- INSERT INTO grupo (codigo, nome, id_adminGrupo, id_comunidade)
+-- VALUES (1, 'Valorant Time A', 1, 1),
+-- (2, 'Lolzeiros de AL', 2, 2), (3, 'Em busca da casa automatica', 3, 3);
